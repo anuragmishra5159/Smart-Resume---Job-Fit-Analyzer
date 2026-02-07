@@ -57,10 +57,8 @@ export const Layout: React.FC<LayoutProps> = ({
                             onKeyDown={(e) => e.key === 'Enter' && onReset?.()}
                         >
                             {/* Logo Icon */}
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-primary-500)] to-[var(--color-primary-700)] flex items-center justify-center shadow-lg shadow-[var(--color-primary-500)]/20 group-hover:shadow-[var(--color-primary-500)]/40 transition-all group-hover:scale-105">
-                                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                </svg>
+                            <div className="w-10 h-10 rounded-xl shadow-lg shadow-[var(--color-primary-500)]/20 group-hover:shadow-[var(--color-primary-500)]/40 transition-all group-hover:scale-105 overflow-hidden">
+                                <img src="/resume_analyzer.svg" alt="Resume Analyzer Logo" className="w-full h-full object-cover" />
                             </div>
                             {/* Logo Text */}
                             <div className="flex flex-col">
